@@ -494,7 +494,7 @@ namespace DP {
 		dat.births(t, DP::FEMALE, births * perc_f);
 
 		// all newborn males are assumed uncircumcised
-		for (int u = DP::SEX_MIN; u <= DP::SEX_MAX; ++u) {
+		for (u = DP::SEX_MIN; u <= DP::SEX_MAX; ++u) {
 			surv = dat.Sx(t,u,0);
 			mort = 1.0 - surv;
 			pop.child_neg(t, u, 0) = dat.births(t,u) * surv;
