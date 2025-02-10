@@ -394,8 +394,8 @@ namespace DP {
 			_irr_pop(year_sex_pop_t(boost::extents[year_final - year_start + 1][DP::N_SEX][DP::N_POP])),
 
 			_partner_rate(NULL),
-			_partner_preference_age(NULL),
 			_partner_assortativity(NULL),
+			_partner_preference_age(NULL),
 
 			_condom_freq(year_bond_t(boost::extents[year_final - year_start + 1][DP::N_BOND])),
 
@@ -417,9 +417,9 @@ namespace DP {
 			_clhiv_agein(year_sex_hiv_dtx_t(boost::extents[year_final - year_start + 1][DP::N_SEX][DP::N_HIV][DP::N_DTX])),
 
 			_births(NULL),
-			_births_exposed(NULL),
 			_deaths(year_sex_age_t(boost::extents[year_final - year_start + 1][DP::N_SEX][DP::N_AGE])),
 			_popsize(year_sex_age_t(boost::extents[year_final - year_start + 1][DP::N_SEX][DP::N_AGE])),
+			_births_exposed(NULL),
 			_new_hiv_infections(NULL)
 	{
 		art_flow(DP::DTX_ART1, 2.0); // 6 months in 1st ART state [0,6)  months
